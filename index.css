@@ -19,7 +19,7 @@ body {
 
 header {
     border-bottom: 1px solid seashell;
-    display: inline-flex;
+    display: flex;
     width: 100%;
     height: 69px;
     position: fixed;
@@ -27,17 +27,23 @@ header {
     background-color: black;
     left: 0;
     top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .logo img {
-    margin-left: 10px;
     height: 50px;
 }
 
-.nav {
+nav a {
     text-decoration: underline;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+}
+
+nav a:not(:last-child) {
+    margin-right: 10px;
 }
 
 .mission {
@@ -90,14 +96,14 @@ header {
     background-image: url('images/img-locations-background.jpg');
     background-size: cover;
     background-position: center center;
-    height: 500px;
+/*    height: 500px;*/
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 75px 0;
 }
 
 .loc-boxes {
@@ -106,7 +112,7 @@ header {
 
 .loc-box {
     width: 300px;
-    height: 300px;
+    /*height: 300px;*/
     background-color: black;
     opacity: 1;
     margin: 20px;
